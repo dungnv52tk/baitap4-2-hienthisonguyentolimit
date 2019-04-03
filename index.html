@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Các số nguyên tố nhỏ hơn: "));
+    let n;
+    let i;
+    let count = 0;
+    for (n = 2; n <= num; n++) {
+        for (i = 1; i <= n; i++) {
+            if (n % i === 0)
+                count++;
+        }
+        if (count === 2) {
+            document.write(n + '<br/>');
+        }
+        count = 0;
+    }
+</script>
+</body>
+</html>
